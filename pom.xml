@@ -27,14 +27,18 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			<dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<dependencies>
+		<dependency>
       				<groupId>junit</groupId>
       				<artifactId>junit</artifactId>
       				<version>4.12</version>
     		   		<scope>test</scope>
-            		</dependency>
-		</dependencies>
-	</dependencyManagement>
+            	</dependency>
+	</dependencies>	
+	
 	<reporting>
     		<plugins>
     		  <plugin>
@@ -44,6 +48,7 @@
       		  </plugin>
     		</plugins>
 	</reporting>
+	
 	<profiles>
 		<profile>
 			<id>spring</id>
